@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1440166830278-3eb28bc7f9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.cover-container {
+    max-width: 60vw
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(70, 70, 70, 0.8);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+    color: rgba(70, 70, 70, 0.8);
+    border-bottom-color: rgba(70, 70, 70, 0.8);
+}
+
+.float-md-left {
+    color: rgba(70, 70, 70, 0.8)
+}
+
+.px-3 {
+    color: rgba(70, 70, 70, 0.8)
+}
+
+.btn {
+    color: rgba(70, 70, 70, 0.8);
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: rgba(70, 70, 70, 0.8);
+    text-shadow: none;
+}

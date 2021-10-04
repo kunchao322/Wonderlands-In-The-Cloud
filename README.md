@@ -1,2 +1,3 @@
-# Wonderlands-In-The-Cloud
-A full stack forum for users to manage and uploading images of interested destinations . Recorded destinations are displayed in a cluster map. Data saved in cloud platform, eg. Mongo Altas and Cloudinary.
+# DestinationForum
+.env file is not uploaded
+1st commint on git hub for code sampling. Still broken links to fix due to local machine enviroment changed, and unknown reasons.

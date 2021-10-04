@@ -1,0 +1,62 @@
+<%layout('layouts/boilerplates')%>
+<div class="text-center">New Destination</div>
+<div class="col-6 offset-3">
+    <form action="/destinations" method="POST" novalidate class='validated-form' enctype='multipart/form-data'>
+        <div class="mb-3">
+            <label class="form-label" for="title">Destination</label>
+            <input class="form-control" type="text" id="title" name="destination[title]" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="location">Location</label>
+            <input class="form-control" type="text" id="location" name="destination[location]" required>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label" for="desciption">Description</label>
+            <textarea class="form-control" type="text" id="descrption" name="destination[description]"
+                required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="price">Cost</label>
+            <div class="input-group">
+                <span class="input-group-text" id="price">$</span>
+                <input type="text" class="form-control" placeholder="0.00" aria-label="price" aria-describedby="price"
+                    name="destination[price]" required>
+            </div>
+        </div>
+        <div class="form-file mb-3 custom-file">
+            <input type="file" class="form-file-input" id="image" name="image" multiple>
+            <label class="form-file-label" for="image">
+                <span class="form-file-text custom-file-label">Choose image(s)...</span>
+                <span class="form-file-button">Browse</span>
+            </label>
+        </div>
+        <button class="btn btn-success">Add Destination</button>
+
+    </form>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.validated-form')
+
+        // Loop over them and prevent submission
+        Array.from(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
